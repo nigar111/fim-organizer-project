@@ -12,7 +12,7 @@ const MainPage = () => {
 
   useEffect(() => {
     const fetchInitialMovies = async () => {
-      const res = await fetch(`http://www.omdbapi.com/?s=Avengers&apikey=${API_KEY}`);
+      const res = await fetch(`https://www.omdbapi.com/?s=Avengers&apikey=${API_KEY}`);
       const data = await res.json();
       if (data.Search) {
         setMovies(data.Search); 
